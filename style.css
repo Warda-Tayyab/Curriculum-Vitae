@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8; 
 }
 .cv-container {
     display: flex;
-    flex-direction: row; /* Displaying content in a row layout */
-    justify-content: center; /* Centering content horizontally */
-    width: 80%; /* Default width */
-    margin: 20px auto; /* Centering container vertically */
+    flex-direction: row;
+    justify-content: center; 
+    width: 40%; 
+    margin: 20px auto; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
@@ -22,11 +22,11 @@ body {
 .sidebar {
     background-color: #010e19;
     color: white;
-    width: 30%; /* Default width for sidebar */
+    width: 30%; 
 }
 .main {
     background-color: white;
-    width: 70%; /* Default width for main content */
+    width: 70%; 
 }
 .sidebar img {
     display: block;
@@ -115,9 +115,10 @@ body {
 }
 @media (max-width: 768px) {
     .cv-container {
-        flex-direction: column; /* Switching to column layout on smaller screens */
+        flex-direction: column; 
+        width: 100%; 
     }
     .sidebar, .main {
-        width: 100%; /* Adjusting widths for smaller screens */
+        width: 100%; 
     }
 }

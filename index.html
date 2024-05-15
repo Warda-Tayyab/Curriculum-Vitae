@@ -11,22 +11,31 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            overflow-y: scroll;
             line-height: 1.6;
         }
         .cv-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: flex-start;
+            width: 40%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
             margin-top: 20px;
         }
         .sidebar {
             background-color: #010e19;
             color: white;
-            width: 100%;
-            max-width: 300px; 
+            width: 35%;
             padding: 20px;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .sidebar img {
             display: block;
@@ -63,18 +72,23 @@
         }
         .main {
             background-color: white;
-            width: 100%;
-            max-width: 800px; /* Limit main content width */
+            width: 65%;
             padding: 20px;
             box-sizing: border-box;
         }
         .main h1 {
             margin-bottom: 10px;
             font-weight: 1000;
+            margin-left: 30px;
         }
         .main h2 {
             color: #2c3e50;
             position: relative;
+        }
+        #head {
+            margin-left: 30px;
+            margin-bottom: 50px;
+            width: 50%;
         }
         .main h2:before {
             content: '';
@@ -86,10 +100,10 @@
             background-color: #2c3e50;
         }
         .main h1 + #head:before {
-            width: 50%;
+            width: 50%; 
         }
         .main h1 + .main h2 {
-            margin-bottom: 40px;
+            margin-bottom: 40px; 
         }
         .main p, .main ul, .main ol {
             margin-bottom: 20px;
@@ -121,8 +135,6 @@
         .main .experience-item strong {
             font-size: 1.2em;
         }
-
-        /* Media Query for responsiveness */
         @media (max-width: 768px) {
             .cv-container {
                 flex-direction: column;
@@ -130,6 +142,7 @@
             }
             .sidebar, .main {
                 width: 90%; 
+                
                 margin: 10px 0;
             }
             .sidebar {
@@ -196,14 +209,14 @@
                 </li>
             </ul>
             <h2>Experience</h2>
-            <strong>Computer Languages Projects</strong>
+            <strong><h3>Computer Languages Projects</h3></strong>
             <ol>
-                <li class="experience-item">Created detailed SRS document for a semester project, ensuring precise software requirements and enhancing development efficiency.
-                </li>
+                <li class="experience-item">Development of through srs document for a semester project guaranteeing precise and defined software requirements thereby enhancing the efficiency of the development process</li>
                 <li class="experience-item">Developed a java based library management system incorporating advanced oop principles for streamlined operations</li>
                 <li class="experience-item">Completed C++ projects and implemented various data structures and algorithms for practical applications.Developed web projects using HTML, CSS, and JavaScript, such as a personal portfolio and a to-do list application.</li>
             </ol>
         </div>
     </div>
 </body>
-</html> 
+</html>
+

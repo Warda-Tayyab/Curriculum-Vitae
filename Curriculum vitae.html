@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            overflow-y: scroll;
+            line-height: 1.6;
+        }
+        .cv-container {
+            display: flex;
+            width: 40%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .sidebar {
+            background-color: #010e19;
+            color: white;
+            width: 35%;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .sidebar img {
+            display: block;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
+        }
+        .sidebar h2 {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .sidebar h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: white;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .sidebar ul li i {
+            margin-right: 10px;
+            color: white;
+        }
+        .main {
+            background-color: white;
+            width: 65%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .main h1 {
+            margin-bottom: 10px;
+            font-weight: 1000;
+            margin-left: 30px;
+        }
+        .main h2 {
+            color: #2c3e50;
+            position: relative;
+        }
+        #head {
+            margin-left: 30px;
+            margin-bottom: 50px;
+            width: 50%;
+        }
+        .main h2:before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #2c3e50;
+        }
+        .main h1 + #head:before {
+            width: 50%; 
+        }
+        .main h1 + .main h2 {
+            margin-bottom: 40px; 
+        }
+        .main p, .main ul, .main ol {
+            margin-bottom: 20px;
+        }
+        .main ul, .main ol {
+            list-style: none;
+            padding: 0;
+        }
+        .main ul li, .main ol li {
+            margin-bottom: 10px;
+        }
+        .main ul li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .main ol li {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .education-item {
+            margin-bottom: 20px;
+        }
+        .education-item span {
+            display: block;
+        }
+        .education-item strong {
+            font-size: 1.2em;
+        }
+        .main .experience-item strong {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <div class="sidebar">
+            <img src="pic1.jpg" alt="Profile Picture">
+            <div>
+                <h2>Contact</h2>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +93237930909</li>
+                    <li><i class="fas fa-envelope"></i> wardat@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Peoples Colony, Gujranwala</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <ul>
+                    <li>C and C++</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>MySQL</li>
+                    <li>Java</li>
+                    <li>MS Office</li>
+                    <li>Content Writing</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Urdu</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <h1>Warda Tayyab</h1>
+            <h2 id="head">Software Engineer</h2>
+            <h2>Profile</h2>
+            <p>Enthusiastic computer science student with a keen interest in software engineering. Proficient in computer languages, eager to apply classroom knowledge to real-world projects and learn from experienced professionals. Seeking an internship to kickstart my career and gain hands-on experience in software development.</p>
+            <h2>Education</h2>
+            <ul>
+                <li class="education-item">
+                    <strong><span>IISAT University Gujranwala</span></strong>
+                    <span>2022-2026</span>
+                    <span>BS Software Engineering (in progress)</span>
+                </li>
+                <li class="education-item">
+                    <strong><span>PUNJAB College</span></strong>
+                    <span>2020-2022</span>
+                    <span>Certificate in Intermediate with A+ grade</span>
+                </li>
+                <li class="education-item">
+                    <strong><span>Dar-E-ARQAM School Gujranwala</span></strong>
+                    <span>Certificate in Matric with A+ grade</span>
+                </li>
+            </ul>
+            <h2>Experience</h2>
+            <strong><h3>Computer Languages Projects</h3></strong>
+            <ol>
+                <li class="experience-item">Development of through srs document for a semester project guaranteeing precise and defined software requirements thereby enhancing the efficiency of the development process</li>
+                <li class="experience-item">Developed a java based library management system incorporating advanced oop principles for streamlined operations</li>
+                <li class="experience-item">Completed C++ projects and implemented various data structures and algorithms for practical applications</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

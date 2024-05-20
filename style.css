@@ -62,11 +62,11 @@ body {
     color: white;
 }
 .sidebar ul li a {
-    color: white;  /* Ensures the additional links have a white color */
+    color: white; 
     text-decoration: none;
 }
 .sidebar ul li a:hover {
-    text-decoration: underline;  /* Optional: Adds underline on hover */
+    text-decoration: underline; 
 }
 .main h1, .main h2 {
     margin-left: 0;

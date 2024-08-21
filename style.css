@@ -119,7 +119,12 @@ body {
 }
 .main .experience-item strong {
     font-size: 1.2em;
+    
 }
+span.line {
+    font-weight: 790;
+}
+
 @media (max-width: 768px) {
     .cv-container {
         flex-direction: column; 
